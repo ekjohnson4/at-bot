@@ -9,7 +9,7 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(true);
+    postMessage();
     this.res.end();
   }else {
     console.log("You don't own me");
@@ -18,7 +18,7 @@ function respond() {
   }
 }
 
-function postMessage(flag) {
+function postMessage() {
   var botResponse, options, body, botReq, quoteBank;
 
   quoteBank = [];
