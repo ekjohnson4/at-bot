@@ -1,25 +1,46 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.1.2",
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
+  "name": "flow-bot-manager",
+  "version": "1.0.14",
+  "description": "Bot manager",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "node index.js"
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "mocha --compilers js:babel-core/register tests/**/*.js",
+    "lint": "eslint src/**"
   },
-  "dependencies": {
-    "director": ""
+  "author": {
+    "email": "jseijas@gmail.com",
+    "name": "Jesus Seijas",
+    "url": "https://github.com/jseijas"
   },
-  "engines": {
-    "node": "0.10.x"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jseijas/flow-bot-manager/issues"
   },
+  "maintainers": [
+    {
+      "email": "jseijas@gmail.com",
+      "name": "jseijas"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "git+https://github.com/jseijas/flow-bot-manager.git"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "botbuilder": "^3.6.0",
+    "flow-connector": "^1.0.1",
+    "flow-render-factory": "^1.0.8",
+    "flow-require-manager": "^1.0.3",
+    "flow-storage": "^1.0.5",
+    "flow-template": "^1.0.1"
+  }
 }
