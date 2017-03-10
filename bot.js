@@ -21,7 +21,8 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq, quoteBank;
 
-  quoteBank = [];
+  quoteBank = ["Hi",
+              "Good day"];
 
   var quote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
 
