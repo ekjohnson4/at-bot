@@ -5,6 +5,8 @@
     "description": "Command Alkon Microsoft Teams chat bot",
     "main": "index.js",
     "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node app.js"
     },
     "dependencies": {
         "@botfuel/botmeter-logger": "latest",
