@@ -1,15 +1,14 @@
 {
-  "name": "at-bot",
-  "version": "1.0.0",
-  "description": "Chat bot developed with Microsoft Bot Framework to provide status of VMManager",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ethan Johnson",
-  "license": "ISC",
-  "dependencies": {
-    "botbuilder": "^3.7.0",
-    "restify": "^4.3.0"
-  }
+    "name": "at-bot",
+    "version": "1.0.0",
+    "author": "Ethan Johnson",
+    "description": "Command Alkon Microsoft Teams chat bot",
+    "main": "index.js",
+    "scripts": {
+    },
+    "dependencies": {
+        "@botfuel/botmeter-logger": "latest",
+        "botbuilder": "^3.4.4",
+        "restify": "^4.3.0"
+    }
 }
